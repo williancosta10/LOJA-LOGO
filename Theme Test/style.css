@@ -1,0 +1,124 @@
+/* 
+Theme Name: Teste MKT - Virtual Theme 
+URI:  Author: Willian Carlos Pontes da Costa Author 
+URI: http://devwill.000webhostapp.com/ 
+Description: Tema desenvolvido com Bootstrap com responsividade
+Link para visualizar e baixar o tema:;
+*/
+*{padding:0;margin:0 auto;}
+body{margin:0;font-family: 'Montserrat', sans-serif;}
+@media (min-width: 1300px){.container{width: 1276px}}
+.clear{clear: both}
+section{width: 100%;float: left;position: relative;z-index: 1;}
+/* HEADER */
+.header_principal{position: relative;z-index: 9;width: 100%;float: left;position: fixed;}
+.header_principal .head{width: 100%;height: 36px;float: left;background: #f47d31;}
+.header_principal .head nav{float: right;height: 100%;}
+.header_principal .head nav li{float: left;list-style: none;padding-left: 18px;position: relative;top: 50%;transform: translateY(-50%);-webkit-transform: translateY(-50%);}
+.header_principal .head nav li a{color: white;font-size: 12px;}
+.header_principal .head .search{float: right;background: #c66223;height: 100%;}
+.header_principal .head .search input[type="text"]{float: left;padding: 0;border: none;background: transparent;width: 283px;height: 100%;padding-left: 17px;color: white;}
+.header_principal .head .search input[type="submit"]{float: right;background: url(images/icons/lupa.png) top center no-repeat;background-position-y: 5px;background-color: transparent;width: 35px;height: 24px;border: none;border-left: 1px solid white;margin-top: 5px;}
+.header_principal .head .search ::-webkit-input-placeholder{color: white}
+.icon_bol{background: url(images/icons/icon_boleto.gif); width: 20px; height: 12px; float: left; margin-top: 4px; margin-right: 7px;}
+@media (max-width: 1200px){.header_principal .head .search input[type="text"]{width: 167px;}}
+@media (max-width: 992px){.header_principal .head .search input[type="text"]{width: 79px;} .header_principal .head nav li{padding-left: 10px;font-size: 11px;}}
+.menu{width: 100%; float: left;}
+.menu .logo{float: left; margin-top: 30px;}
+.menu nav{float: right; margin-top: 48px;}
+.menu nav li{float: left; padding: 8px; list-style: none; margin-left: 8px; position: relative;}
+.menu nav li a{color: #333132;font-size: 14px;font-weight: 500;}
+@media (max-width: 992px){.menu .logo{width: 146px;} .menu nav{margin-top: 36px;}}
+.menu nav li:hover{background: white}
+.submenu{visibility: hidden;width: 304px;height: 199px;position: absolute;margin-top: 30px !important;margin-left: -8px;}
+.submenu a{width: 55%;padding: 4px !important;float: left;}
+.sub-masculino{background: url(images/content/sub-menu-masculino.png) top center no-repeat;width: 100%;height: 100%; padding: 8px;}
+.sub-feminino{background: url(images/content/sub-menu-feminino.png) top center no-repeat;width: 100%;height: 100%;padding: 8px;}
+.sub-kids{background: url(images/content/sub-menu-kids.png) top center no-repeat;width: 100%;height: 100%;padding: 8px;}
+.open_menu:hover{padding-bottom:30px;}
+@media screen and (max-width: 1400px){.submenu{width: 249px;} .submenu div{background-position-x: -54px;}}
+.header_mobile{width: 100%;float: left;background: #fff;position: fixed;z-index: 9;}
+.header_mobile .logo{float: left; width: 95px; margin-top: 12px;}
+.navbar-mob{width: 100%;height: 100vh;position: absolute;top: 0;background: rgba(244, 125, 49, 0.9);display: none;padding: 2vh;}
+.btn-close{float: right;color: white;font-size: 4vh;}
+.navbar-mob .search{float: left;background: #c66223;height: 6vh;width: 100%;}
+.navbar-mob .search input[type="text"]{float: left;padding: 0;border: none;background: transparent;width: 80%;height: 100%;padding-left: 17px;color: white;}
+.navbar-mob .search input[type="submit"]{float: right;background: url(images/icons/lupa.png) top center no-repeat;background-position-y: 5px;background-color: transparent;width: 35px;height: 4.3vh;margin-top: 0.8vh;border: none;border-left: 1px solid white;}
+.navbar-mob .search ::-webkit-input-placeholder{color: white}
+.navegate-list{width: 100%; float: left; margin-top: 3vh;}
+.navegate-list li{list-style: none; padding: 2px;}
+.navegate-list li a{color: white; font-size: 2.5vh;}
+.navegate-list li ul{float: left; width: 100%; padding-left: 2vh;}
+.active-scroll .head{background: #d1d3d4}
+.active-scroll .head nav li a{color: black}
+.active-scroll .icon_bol{background: url(images/icons/icon_boleto2.gif)}
+.active-scroll .search{background: #949697 !important;}
+.active-scroll .menu{background: white !important}
+.active-scroll .menu .logo{width: 109px;margin-top: 9px;}
+.active-scroll .menu nav{margin-top: 8px; margin-bottom: 8px;}
+.active-scroll .open_menu:hover{padding-bottom: 8px;}
+.active-scroll .submenu{margin-top: 16px !important;}
+/* BANNER */
+@media (max-width: 767px) and (max-height: 800px){.carousel{margin-top: 56px;} .carousel-inner img{margin-left: -106px;height: 229px;}}
+@media (min-width: 768px) and (max-width: 992px){.carousel-inner img{height: 400px;opacity: 0.7;}}
+.glyphicon-chevron-right{background: url(images/buttons/arrow.png);width: 20px !important;height: 28px !important;}
+.glyphicon-chevron-left{background: url(images/buttons/arrow.png);width: 20px !important;height: 28px !important;-webkit-transform: scaleX(-1);}
+/* CONTENT */
+.banner-adesao img{max-width: 101%;}
+.content_page{width: 100%;float: left;padding-top: 34px;padding-bottom: 50px;}
+.container_post{position: relative; margin-bottom: 27px;}
+.container_post img{opacity: 0.9; -moz-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s;}
+.container_post:hover img {-moz-transform: scale(1.1); -webkit-transform: scale(1.1); transform: scale(1.1);}
+.container_post .row{position: relative;margin: 0;overflow: hidden;}
+.content_post{position: absolute;top: 0;width: 100%;height: 100%;}
+.nopadd{padding: 0}
+.position-1{float: left;width: 235px;margin-top: 2vh;}
+.position-2{position: absolute;bottom: 21px;left: 50%;transform: translateX(-50%);display: table;}
+.position-3{float: right;margin-top: 10vh;margin-right: 14px;}
+.position-4{position: absolute;bottom: 35px;left: 50%;transform: translateX(-50%);display: table;}
+.post-meta-key{display: none}
+.category{text-align: center;font-size: 10pt;font-weight: 300;}
+.category a{color: black; font-weight: 100; font-size: 11pt;}
+.title{text-align: center; text-transform: uppercase; font-size: 18pt; width: 181px; margin-top: 10px;}
+.post-meta li{list-style: none; text-align: center; width: 205px;}
+.btn-post{background: white; border: 1px solid; padding: 3px 8px; color: black; display: table; font-size: 9pt;}
+.social{float: left;width: 100%;padding-bottom: 110px;padding-top: 100px;}
+.social ul{width: 100%; float: left;}
+.social ul li{list-style: none; float: left; width: 40px; height: 40px; margin-right: 14px;}
+div.newsletter{padding-top: 95px;}
+form.newsletter{background: #d1d3d4; padding: 8px; float: left;}
+form.newsletter input[type='text']{background: transparent; border: none; float: left; position: relative; top: 3px; width: 65%;}
+form.newsletter input[type='submit']{background: white; border: 1px solid; padding: 3px 8px; float: right;}
+.banner-adesao .label{width: 354px;float: left;background: #58207b;position: absolute;bottom: 1px;}
+.banner-adesao .label p{color: #f47d31; text-align: center; margin: 0; padding: 10px;}
+.banner-adesao{position: relative;}
+.link_foot p{color: white; width: 100%;}
+.itens-link li{color: white; width: 100%; float: left; margin-left: 16px; margin-bottom: 6px;}
+footer{width: 100%;height: 323px;float: left;background: url(images/background/foot.jpg) top center no-repeat;padding-top: 50px;}
+.services .sac{float: left; font-size: 10pt; color: white; margin-bottom: 20px;}
+.services .tel{float: right; font-size: 10pt; color: white; position: relative; left: -14px;}
+.services .btn-boleto{float: left; width: 167px; height: 44px; border: 1px solid; cursor: pointer; background: white;}
+.services .btn-boleto span{width: 49px; float: left; height: 28px; background: url(images/icons/icon_boleto2.gif) top center no-repeat; background-position-y: 8px; border-right: 1px solid #d1d3d4; margin-top: 7px; margin-left: 0;}
+.services .btn-boleto p{float: right; text-align: center; font-weight: 600; font-size: 10px; padding: 5px; width: 115px; margin-top: 3px;}
+.contacts{padding: 0}
+.direitos_reservados{font-size: 10pt; color: white; margin-top: 45px;}
+.mkt-signature{float: right; position: absolute; right: 0; bottom: 0;}
+@media (min-width:768px) and (max-width:991px){.info_post{width: 100%; margin: 0; top: 0; margin-top: 14px;} .banner-adesao .label{width: 212px !important;} footer{background-position-x: -430px;}}
+@media (max-width: 767px){.contacts{padding: 0} .mkt-signature{position: relative;float: left;margin-left: 15px;width: 104px;margin-top: 13px;} .tel{float: left !important; margin-left: 43px;}.link_foot{margin-bottom: 25px;} .banner-adesao .label{width: 100% !important;position: relative !important;top: 86%;} div.newsletter{padding-top: 40px !important;} .social{padding-top: 40px !important; padding-bottom: 40px !important;} .banner-adesao{background: url(images/content/banner-proposta-adesao.jpg) top center fixed;background-size: 100%;width: 100%;height: 246px;margin-bottom: 20px;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;padding: 0;} .banner-adesao:before{content: "";display: block;position: fixed;left: 0;top: 0;width: 100%;z-index: -10;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;} .container_post{max-width: 410px;padding: 0;} footer{background-color: #f47d31;height: auto;background: url(images/background/footer.png) fixed #f47d31;background-size: 353%;background-position-y: 140%;padding-bottom: 24px;}}
+@media (min-width: 992px) and (max-width: 1200px){.banner-adesao .label{width: 286px;}}
+/* MAPS */
+.map-canvas{width: 100%;float: left;position: relative;border-top: 1px solid #d1d3d4;border-bottom: 1px solid #d1d3d4;}
+.mapstyle{width: 100%; float: left; height: 300px}
+.localization{position: absolute;top: 30%;transform: translateY(-50%);-webkit-transform: translateY(-50%);left: 50%;transform: translateX(-50%);background: white;border: 1px solid #d1d3d4;padding: 21px 17px;width: 576px;}
+.localization .left{float: left;}
+.localization .right{float: right;padding-left: 19px;border-left: 1px solid #d1d3d4;margin-left: 16px;}
+.search_geo{float: left;width: 203px;height: 53px;border: 1px solid;cursor: pointer;}
+.search_geo .ico{width: 41px;float: left;height: 35px;background: url(images/icons/local.png) top center no-repeat;background-position-y: 8px;border-right: 1px solid #d1d3d4;margin-top: 7px;margin-left: 0;}
+.search_geo p{float: right; text-align: center; font-weight: 600; font-size: 10px; padding: 5px; width: 157px;}
+.search_cep{float: right;}
+.search_cep p{font-size: 12px; font-weight: 500;}
+.search_form_cep{background: #d1d3d4;padding: 8px;}
+.search_form_cep input[type='text']{background: transparent; border: none;}
+.search_form_cep input[type='submit']{background: white; border: 1px solid; padding: 3px 8px;}
+.localization span{position: absolute;margin-left: 10px;background: white;margin-top: 20px;}
+@media (max-width: 767px){.localization{width: auto}}
